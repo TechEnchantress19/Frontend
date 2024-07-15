@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://shorturl.at/uyfuC);
+    background-size: cover;
+    background-position: bottom;
+
+   }
+
+.calculator {
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    background-color:#FFFFFF;
+    color: #000000;
+    font-size: 2em;
+    text-align: right;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    width: 70%;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button.number {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button.ac {
+    background-color: #f44336;
+    color: white;
+}
+
+.button.operator {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.button.dot {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.button.angle {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.button.trig {
+    background-color: #2196F3;
+    color: white;
+}
+
+.button.log, .button.sqrt {
+    background-color: #FF9800;
+    color: white;
+}
+
+.button.equal {
+    background-color: #4CAF50;
+    color: white;
+    grid-column: span 2;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button.ac:hover {
+    background-color: #e57373;
+}
+
+.button.operator:hover {
+    background-color: #BA68C8;
+}
+
+.button.trig:hover {
+    background-color: #64b5f6;
+}
+
+.button.log:hover, .button.sqrt:hover {
+    background-color: #ffb74d;
+}
