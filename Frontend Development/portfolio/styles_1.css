@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('portf_back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-container {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.portfolio-content h1 {
+    font-size: 36px;
+    color: #004080; /* Dark blue color */
+    margin-bottom: 20px;
+}
+
+.portfolio-content p {
+    font-size: 18px;
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px;
+}
+
+.portfolio-content ul {
+    list-style-type: circle; /* Circle bullet points */
+    text-align: left;
+    margin-left: 20px;
+    padding: 0;
+    column-count: 2;
+}
+
+.portfolio-content ul li {
+    margin-bottom: 10px;
+}
+
+.portfolio-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a73e8; /* Blue background */
+    color: white; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.portfolio-content a:hover {
+    background-color: #004080; /* Dark blue background on hover */
+}
