@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Gallery image slider - Bedimcode</title>
+    <style>
+        body {
+            background-color: brown;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .marquee-container {
+            width: 100%;
+            background-color: #FFDBAC;
+            color: brown;
+            padding: 10px 0;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .marquee {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            width: 80%;
+        }
+        .info-container {
+            flex: 1;
+            margin-right: 20px;
+            background-color: white;
+            color: brown;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            align-self: center;
+        }
+        .gallery {
+            flex: 2;
+        }
+        .info-container h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="marquee-container">
+        <div class="marquee"><h1>Basic Image Gallery</h1></div>
+    </div>
+    <div class="gallery-container">
+        <div class="info-container">
+            <h2>What is a Basic Image Gallery?</h2>
+            <p>A basic image gallery is a collection of images displayed on a webpage or application. It typically features a grid or list layout, allowing users to view multiple images at once. Users can click on thumbnails to view larger versions, often with navigation controls to browse through the gallery. Basic features include image titles, descriptions, and sometimes captions. Image galleries are used for showcasing portfolios, photo albums, products, and more. They enhance visual presentation and user engagement by providing an organized, aesthetically pleasing way to display and navigate through images, making it easy for users to explore and appreciate the content.</p>
+        </div>
+        <div class="gallery">
+            <!-- =============== SWIPER GALLERY CARDS =============== -->
+            <div class="swiper gallery-cards">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="gallery__card">
+                            <img src="assets/img/img1.png" alt="image gallery" class="gallery__img">
+                            <div class="gallery__data">
+                                <h3 class="gallery__title">Ornament Vase</h3>
+                                <span class="gallery__subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="gallery__card">
+                            <img src="assets/img/img2.png" alt="image gallery" class="gallery__img">
+                            <div class="gallery__data">
+                                <h3 class="gallery__title">Ornament Vase</h3>
+                                <span class="gallery__subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="gallery__card">
+                            <img src="assets/img/img3.png" alt="image gallery" class="gallery__img">
+                            <div class="gallery__data">
+                                <h3 class="gallery__title">Ornament Vase</h3>
+                                <span class="gallery__subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="gallery__card">
+                            <img src="assets/img/img4.png" alt="image gallery" class="gallery__img">
+                            <div class="gallery__data">
+                                <h3 class="gallery__title">Ornament Vase</h3>
+                                <span class="gallery__subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="gallery__card">
+                            <img src="assets/img/img5.png" alt="image gallery" class="gallery__img">
+                            <div class="gallery__data">
+                                <h3 class="gallery__title">Ornament Vase</h3>
+                                <span class="gallery__subtitle">Modern</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =============== SWIPER GALLERY THUMBNAIL =============== -->
+            <div class="gallery__overflow">
+                <div class="swiper gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery__thumbnail">
+                                <img src="assets/img/img1.png" alt="image thumbnail" class="gallery__thumbnail-img">
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="gallery__thumbnail">
+                                <img src="assets/img/img2.png" alt="image thumbnail" class="gallery__thumbnail-img">
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="gallery__thumbnail">
+                                <img src="assets/img/img3.png" alt="image thumbnail" class="gallery__thumbnail-img">
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="gallery__thumbnail">
+                                <img src="assets/img/img4.png" alt="image thumbnail" class="gallery__thumbnail-img">
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="gallery__thumbnail">
+                                <img src="assets/img/img5.png" alt="image thumbnail" class="gallery__thumbnail-img">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Swiper pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper arrows -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
