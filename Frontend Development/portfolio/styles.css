@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('portf_back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background-color: #004080; /* Dark blue background */
+    color: white; /* White font color */
+    padding: 20px;
+    width: 40%; /* 2:3 ratio (40% to 60%) */
+    box-sizing: border-box;
+}
+
+.right-section {
+    background-color: #1a73e8; /* Blue background (same as link color) */
+    color: white; /* White font color */
+    padding: 20px;
+    width: 60%; /* 2:3 ratio (40% to 60%) */
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white; /* White font color for the header */
+    border-bottom: 1px solid white; /* Underline for header */
+}
+
+header h2 {
+    margin: 5px 0 20px;
+    font-size: 18px;
+    color: white; /* White font color for the header */
+    border-bottom: 1px solid white; /* Underline for header */
+}
+
+section h3 {
+    font-size: 16px;
+    color: white; /* White font color for section headings */
+    margin-bottom: 10px;
+    border-bottom: 1px solid white; /* Underline for section headings */
+}
+
+section p {
+    font-size: 14px;
+    color: white; /* White font color for paragraphs */
+    margin: 5px 0;
+}
+
+section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+section ul.left-section-bullets li {
+    position: relative;
+    padding-left: 20px; /* Space for the triangle */
+    margin-bottom: 5px;
+}
+
+section ul.left-section-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid white; /* White triangle bullet */
+}
+
+section ul.right-section-bullets li {
+    position: relative;
+    padding-left: 20px; /* Space for the circle */
+    margin-bottom: 5px;
+}
+
+section ul.right-section-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: white; /* White circle bullet */
+    border-radius: 50%; /* Make the bullet a circle */
+}
+
+.contact a {
+    color: #87ceeb; /* Light blue color for links */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
